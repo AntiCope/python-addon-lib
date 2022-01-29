@@ -3,7 +3,7 @@ from .listener import event_listener
 
 class Module(object):
     
-    def __init__(self, name, description="Python module."):
+    def init(self, name, description="Python module."):
         PythonSystem.INSTANCE.pymodules.append(self)
         self.name = name
         self.description = description

@@ -5,7 +5,7 @@ import threading
 
 class RemotePython(mcapi.Module):
     def __init__(self):
-        super(RemotePython, self).__init__("remote-python", "Create python interpreter server.")
+        self.init("remote-python", "Create python interpreter server.")
     
     def on_activate(self):
         self.server = ThreadedTCPServer(("127.0.0.1", 2000), RequestPythonREPL)
