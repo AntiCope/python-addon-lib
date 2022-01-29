@@ -1,8 +1,6 @@
-from net.minecraft.client import MinecraftClient
 from meteordevelopment.meteorclient.systems.modules import Modules
 from baritone.api import BaritoneAPI
-
-mc = MinecraftClient.getInstance()
+from meteordevelopment.meteorclient.MeteorClient import mc
 
 modules = Modules.get()
 
